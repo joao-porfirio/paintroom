@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Lexend-Deca;
+  src: url("../assets/fonts/LexendDeca-Regular.ttf");
+}
+@font-face {
+  font-family: Inter-Medium;
+  src: url("../assets/fonts/Inter-Medium.ttf");
+}
+.header {
+  max-height: 100px;
+  background-color: #000000;
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.formulario {
+  margin: 0 8%;
+}
+.formulario__titulo-parede {
+  font-size: 2.5rem;
+}
+.formulario__container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 3rem 0;
+}
+@media (max-width: 767.98px) {
+  .formulario__container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.formulario__box {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 1rem 0;
+}
+@media (max-width: 767.98px) {
+  .formulario__box {
+    max-width: 100%;
+  }
+}
+.formulario__field {
+  text-align: center;
+  padding: 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  outline: 1px solid #ccc;
+  margin: 2.5rem 1rem 0 1rem;
+  max-width: 110px;
+  font-family: Inter-Medium;
+}
+.formulario__campos-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.formulario__campos-selecao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.3rem 1rem 0 1rem;
+}
+.formulario__selecao {
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.5rem;
+}
+.formulario__aviso-erro {
+  color: red;
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+  font-family: Lexend-Deca;
+}
+@media (max-width: 767.98px) {
+  .formulario__aviso-erro {
+    margin: 0;
+  }
+}
+
+#btn-submit {
+  font-size: 1.5rem;
+}
+
+.logo-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767.98px) {
+  .logo-central {
+    display: none;
+  }
+}
+
+.swal2-title {
+  font-size: 3.5rem;
+}
+
+.swal2-html-container {
+  font-size: 1.7rem !important;
+}
+
+.swal2-popup {
+  width: 30%;
+}
+@media (max-width: 767.98px) {
+  .swal2-popup {
+    width: 100%;
+  }
+}
+
+.swal2-confirm {
+  background-color: #1976d2 !important;
+  font-family: Lexend-Deca;
+  font-size: 1.5rem;
+}
+
+.exibicao {
+  margin: 40px 0;
+}
+.exibicao__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0 0 0;
+  flex-direction: row;
+}
+@media (max-width: 767.98px) {
+  .exibicao__container {
+    flex-direction: column;
+  }
+}
+.exibicao__latas {
+  display: flex;
+  margin: 0 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter-Medium;
+}
+@media (max-width: 767.98px) {
+  .exibicao__latas {
+    margin: 10px 0;
+  }
+}
+.exibicao__tipoLata {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+  font-family: Inter-Medium;
+}
+.exibicao__legenda {
+  font-weight: 600;
+  font-size: 1.9rem;
+  margin: 0.5rem 0;
+  font-family: Inter-Medium;
+}
+
+/*# sourceMappingURL=style.css.map */

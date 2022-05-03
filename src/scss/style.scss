@@ -1,0 +1,25 @@
+@mixin for-phone-only{
+    @media(max-width:767.98px) {@content;}
+}
+
+@mixin for-tablet-only{
+    @media(min-width:768px)and(max-width:1199.98px){@content;}
+}
+
+@mixin for-desktop-only{
+    @media(min-width:1200px){@content;}
+}
+
+@font-face {
+    font-family: Lexend-Deca;
+    src: url("../assets/fonts/LexendDeca-Regular.ttf");
+}
+@font-face {
+    font-family: Inter-Medium;
+    src: url("../assets/fonts/Inter-Medium.ttf");
+}
+
+$lexend-regular: Lexend-Deca;
+$inter-media: Inter-Medium;
+
+@import 'header', 'formulario', 'exibicao';

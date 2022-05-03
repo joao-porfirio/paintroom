@@ -1,0 +1,43 @@
+.exibicao {
+
+    margin: 40px 0;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 35px 0 0 0;
+        flex-direction: row;
+        
+        @include for-phone-only{
+            flex-direction: column;
+        }
+    }
+
+    &__latas {
+        display: flex;
+        margin: 0 2.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $inter-media; 
+
+        @include for-phone-only{
+            margin: 10px 0;
+        }
+    }
+
+    &__tipoLata {
+        font-weight: 400;
+        font-size: 1.7rem;
+        margin: 0.5rem 0;
+        font-family: $inter-media;
+    }
+
+    &__legenda {
+        font-weight: 600;
+        font-size: 1.9rem;
+        margin: 0.5rem 0;
+        font-family: $inter-media;
+    }
+}
