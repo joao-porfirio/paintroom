@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/img/logo.jpg';
+import logo from '../assets/img/pincel-logo.png';
 import { Link } from 'react-router-dom'
 import '../css/reset.css';
 import '../css/style.css';
