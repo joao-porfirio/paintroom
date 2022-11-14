@@ -10,13 +10,23 @@
   max-height: 100px;
   background-color: #000000;
 }
-.header__nav {
-  display: flex;
-  justify-content: center;
-}
 .header__logo {
   max-width: 200px;
   max-height: 100px;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__lista-tamanhos-tinta {
+  list-style: circle;
+}
+
+#btn-infos, #btn-back {
+  font-size: 1.7rem;
+  font-family: Inter-Medium;
 }
 
 .formulario {
