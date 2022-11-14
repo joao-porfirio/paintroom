@@ -29,6 +29,10 @@
   font-family: Inter-Medium;
 }
 
+#btn-back {
+  margin-top: 2.2rem;
+}
+
 .formulario {
   margin: 0 8%;
 }
