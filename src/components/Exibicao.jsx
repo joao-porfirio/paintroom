@@ -4,6 +4,8 @@ import lataPequena from '../../src/assets/img/paint-64.png'
 import lataMedia from '../../src/assets/img/paint-128.png'
 import lataGrande from '../../src/assets/img/paint-256.png'
 import { Typography } from "@mui/material";
+import Button from '@mui/material/Button';
+import FirstPageOutlinedIcon from '@mui/icons-material/FirstPageOutlined';
 
 export const Exibicao = () => {
     const metroQuadrado = Number(localStorage.getItem("metrosQuadrados"));
@@ -103,6 +105,9 @@ export const Exibicao = () => {
                     })
                 }
             </div>
+            <Button color="primary" variant="contained" startIcon={<FirstPageOutlinedIcon />} size="medium" id="btn-back">
+				Voltar
+			</Button>
         </section>
     )
 }
