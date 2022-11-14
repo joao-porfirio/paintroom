@@ -5,6 +5,7 @@ import * as yup from "yup";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Typography } from "@mui/material";
+import SkipNextOutlinedIcon from '@mui/icons-material/SkipNextOutlined';
 import { calculoMetroQuadrado } from '../api/calculos'
 import { sugerirQuantidadeLatasTinta } from '../api/calculos'
 import { useNavigate } from 'react-router-dom';
@@ -267,7 +268,7 @@ export function Formulario() {
                         </article>
                     </div>
                 </div>
-                <Button variant="contained" id="btn-submit" type="submit" style={{fontFamily: 'Inter-Medium', marginBottom: '20px'}}>Calcular</Button>
+                <Button variant="contained" id="btn-submit" endIcon={<SkipNextOutlinedIcon />} type="submit" style={{fontFamily: 'Inter-Medium', marginBottom: '20px'}}>Calcular</Button>
             </form>
         </Box>
     );
