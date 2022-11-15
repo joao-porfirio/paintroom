@@ -33,6 +33,11 @@
   margin-top: 2.2rem;
 }
 
+.close-modal {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .formulario {
   margin: 0 8%;
 }
