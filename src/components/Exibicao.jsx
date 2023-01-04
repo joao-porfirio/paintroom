@@ -6,8 +6,12 @@ import lataGrande from '../../src/assets/img/paint-256.png'
 import { Typography } from "@mui/material";
 import Button from '@mui/material/Button';
 import FirstPageOutlinedIcon from '@mui/icons-material/FirstPageOutlined';
-
+import { useNavigate } from 'react-router-dom'
 export const Exibicao = () => {
+
+    const navigate = useNavigate();
+    if(localStorage.getItem("latas") == null) window.location = "/"; 
+
     const metroQuadrado = Number(localStorage.getItem("metrosQuadrados"));
     const latas = localStorage.getItem("latas");
     const litrosNecessarios = Number(localStorage.getItem("litrosNecessarios")); 
@@ -105,7 +109,7 @@ export const Exibicao = () => {
                     })
                 }
             </div>
-            <Button color="primary" variant="contained" startIcon={<FirstPageOutlinedIcon />} size="medium" id="btn-back">
+            <Button onClick={()=>navigate('/')} color="primary" variant="contained" startIcon={<FirstPageOutlinedIcon />} size="medium" id="btn-back" >
 				Voltar
 			</Button>
         </section>
