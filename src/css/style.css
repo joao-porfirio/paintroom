@@ -115,6 +115,12 @@
 
 #btn-submit {
   font-size: 1.5rem;
+  margin-top: 80px;
+}
+@media (max-width: 767.98px) {
+  #btn-submit {
+    margin-top: 0;
+  }
 }
 
 .logo-central {

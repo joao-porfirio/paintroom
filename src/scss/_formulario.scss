@@ -75,6 +75,11 @@
 
 #btn-submit{
     font-size: 1.5rem;
+    margin-top: 80px;
+    
+    @include for-phone-only{
+        margin-top: 0;
+    }
 }
 
 .logo-central{
