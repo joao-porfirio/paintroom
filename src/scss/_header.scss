@@ -30,3 +30,8 @@
     display: flex;
     justify-content: flex-end;
 }
+.modal-container{
+    overflow: scroll;
+    max-height: 100vh;
+    height: 100vh;
+}

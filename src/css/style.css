@@ -38,6 +38,12 @@
   justify-content: flex-end;
 }
 
+.modal-container {
+  overflow: scroll;
+  max-height: 100vh;
+  height: 100vh;
+}
+
 .formulario {
   margin: 0 8%;
 }
